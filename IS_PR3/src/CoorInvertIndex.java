@@ -135,6 +135,7 @@ public class CoorInvertIndex {
         for(String s: index.keySet()){
             try {
                 out.write(( "\n"+s + ":").getBytes());
+                out.flush();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -144,7 +145,7 @@ public class CoorInvertIndex {
             Map.Entry me = (Map.Entry) it.next();
             try {
                 out.write(("\n"+me.getKey() + ":"+me.getValue()+";").getBytes());
-
+                out.flush();
             } catch (IOException e) {
                 e.printStackTrace();
             }
