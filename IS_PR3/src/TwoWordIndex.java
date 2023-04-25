@@ -74,7 +74,7 @@ public class TwoWordIndex {
             Map.Entry me = (Map.Entry)it.next();
             try {
                 out.write(("<"+ me.getKey() +"> : "+me.getValue()+"\n").getBytes());
-
+                out.flush();
             } catch (IOException e) {
                 e.printStackTrace();
             }
