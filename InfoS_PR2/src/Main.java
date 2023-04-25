@@ -7,10 +7,10 @@ public class Main {
         Scanner in = new Scanner(System.in);
 
         long time_m =  System.nanoTime();
-        Matrix m = new Matrix("C:\\Users\\armad\\OneDrive\\Desktop\\Infosearch_PR2\\Infosearch_PR2\\Collection");
+        Matrix m = new Matrix("C:\\Users\\armad\\OneDrive\\Desktop\\Infosearch_PR2\\Infosearch_PR2\\test_files");
         time_m = System.nanoTime()-time_m;
         long time_i =  System.nanoTime();
-        Index ind = new Index("C:\\Users\\armad\\OneDrive\\Desktop\\Infosearch_PR2\\Infosearch_PR2\\Collection");
+        Index ind = new Index("C:\\Users\\armad\\OneDrive\\Desktop\\Infosearch_PR2\\Infosearch_PR2\\test_files");
         time_i = System.nanoTime()-time_i;
 
 
